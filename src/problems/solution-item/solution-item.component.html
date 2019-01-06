@@ -1,0 +1,28 @@
+<!--ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Solution">
+    <ng-template ngbPanelContent>
+      {{solution.description}}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion-->
+<div class="answer-section">
+  <h4>Answer Section</h4>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Solution
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      {{solution.description}}
+      <div *ngIf="codeVisible" class="code-section">
+        <code>
+          <pre>{{solution.solutionContent}}</pre>
+        </code>
+      </div>
+      <mat-action-row>
+        <button mat-button (click)="toggleCode()">{{toggleText}}</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

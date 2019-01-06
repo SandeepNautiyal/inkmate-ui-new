@@ -1,0 +1,13 @@
+<div class="problem-section">
+  <h3>{{problem.title}}</h3>
+  <div>
+	{{problem.problemDescription}}
+  </div>
+
+  <div class="tag-list">
+  	<mat-chip-list>
+	  <mat-chip *ngFor="let tag of problem.tags">{{tag}}</mat-chip>
+	</mat-chip-list>
+  </div>
+</div>
+<app-solution-item *ngFor="let solution of solutionList" [solution]="solution"></app-solution-item>

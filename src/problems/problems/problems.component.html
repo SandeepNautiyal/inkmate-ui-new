@@ -1,0 +1,8 @@
+<h3 class="jumbotron">List of problems</h3>
+
+<ul class="list-group">
+	<li *ngFor="let problem of problemList" class="list-group-item">
+		<app-problem-item [problem]="problem"></app-problem-item>
+	</li>
+
+</ul>

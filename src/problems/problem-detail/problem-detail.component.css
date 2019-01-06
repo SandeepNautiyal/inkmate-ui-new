@@ -1,0 +1,10 @@
+.problem-section {
+	border-bottom: 1px #eee solid;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.tag-list {
+	margin-top: 10px;
+	padding: 10px;
+}
